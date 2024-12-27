@@ -1,0 +1,113 @@
+.feed {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 18px;
+  border-radius: 16px;
+  gap: 20px;
+  text-align: left;
+  background-color: white;
+  font-family: "Arial", sans-serif;
+  width: 700px;
+}
+
+.heading {
+  align-self: flex-start;
+  font-size: 20px;
+  color: #333;
+  margin-left: 20px;
+}
+
+/* Container for Graph and Cards */
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Card Container */
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/*Card Styling */
+.card1,
+.card2,
+.card3 {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  width: 180px;
+  height: 242px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.card1 img,
+.card2 img,
+.card3 img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 16px;
+}
+
+.card1 span,
+.card2 span,
+.card3 span {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.card1 .rate,
+.card2 .rate,
+.card3 .rate {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.card1 {
+  background-color: #e0f3fa;
+}
+
+.card2 {
+  background-color: #ffe6e9;
+}
+
+.card3 {
+  background-color: #ffe6e9;
+}
+.card3 .icon{
+  display: flex;
+}
+/* Hover Effects */
+.card1:hover,
+.card2:hover,
+.card3:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* List Container */
+.listContainer {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #f7f4fd;
+
+
+
+}

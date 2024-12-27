@@ -1,0 +1,130 @@
+/* Container styling for the graph */
+.graph-container {
+  display: flex;
+  background-color: #f8f5fc;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 298px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Header for graph title and dropdown */
+.graph-header {
+
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.graphHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.graph-header h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.graph-header select {
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #666;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Chart container */
+.chart-container {
+  position: relative;
+  width: 500px;
+  height: 187px;
+  margin-bottom: 20px;
+}
+
+.itemContainer {
+  display: flex;
+}
+
+/* Legend styling */
+
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.legend-color.systolic {
+  background-color: #f783ac;
+}
+
+.legend-color.diastolic {
+  background-color: #a29bfe;
+  
+}
+
+.legend-text {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Metrics Container */
+.metrics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 120px;
+}
+
+/* Individual Metric Item Styling */
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.metric-item_higher {
+  margin-bottom: 20px;
+  
+}
+
+.metric-item_lower {
+  margin-top: 0;
+
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.text{
+  display: flex;
+}
+.text span {
+  font-size: 12px;
+}
+
+/* Add hover effects */
+.metric-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}

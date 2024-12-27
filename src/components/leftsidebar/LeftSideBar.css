@@ -1,0 +1,136 @@
+/* General Styles */
+.LeftSideBar {
+  flex: 1;
+  width: 367px;
+  height: 1054px;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  border-radius: 16px;
+  background-color: #fff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.LeftSideBar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.LeftSideBar::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.LeftSideBar::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Manrope', sans-serif;
+}
+
+.header svg {
+  font-size: 24px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header svg:hover {
+  color: #007bff;
+}
+
+/* Patient List */
+.patientsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.patientItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.patientItem:hover {
+  background-color: #e9f5ff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Patient Image */
+.patientItem img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+/* Patient Text */
+.textInfo {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Manrope', sans-serif;
+  flex-grow: 1;
+}
+
+.textInfo span:first-child {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.textInfo span:last-child {
+  font-size: 14px;
+  color: #888;
+}
+
+/* More Icon */
+.patientItem svg {
+  font-size: 24px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.patientItem svg:hover {
+  color: #007bff;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .LeftSideBar {
+    width: 100%;
+    height: auto;
+  }
+
+  .header h2 {
+    font-size: 16px;
+  }
+
+  .patientItem img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .textInfo span:first-child {
+    font-size: 14px;
+  }
+
+  .textInfo span:last-child {
+    font-size: 12px;
+  }
+}

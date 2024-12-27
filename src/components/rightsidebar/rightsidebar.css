@@ -1,0 +1,205 @@
+.rightSideBar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.patientsInfo {
+  margin-bottom: 32px;
+  width: 350px;
+  height: 740px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Patient Image Section */
+.patientsImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.patientsImage img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.patientsImage span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Patient Details Section */
+.pationatDeatis {
+  width: 100%;
+}
+
+.itemsInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.itemsInfo:hover {
+  background-color: #f5faff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.itemsInfo svg {
+  font-size: 24px;
+  color: #555;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer span:first-child {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.textContainer span:last-child {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #01F0D0;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #00c9b5;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #009984;
+  transform: scale(1);
+}
+
+/* Lab Results Section */
+.labResults {
+  width: 367px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.labResults h1 {
+  font-family: 'Manrope', sans-serif;
+  ;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.labResultsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #072635;
+  transition: background-color 0.3s ease;
+}
+
+.labResultsContainer:hover {
+  background-color: #f0f8ff;
+}
+
+.labResultsContainer svg {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .rightSideBar {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .patientsInfo,
+  .labResults {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .patientsImage img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .patientsImage span {
+    font-size: 18px;
+  }
+
+  .itemsInfo svg {
+    font-size: 20px;
+  }
+
+  .textContainer span:first-child {
+    font-size: 12px;
+  }
+
+  .textContainer span:last-child {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .labResults h2 {
+    font-size: 18px;
+  }
+
+  .labResultsContainer {
+    font-size: 14px;
+  }
+
+  .labResultsContainer svg {
+    font-size: 18px;
+  }
+}
