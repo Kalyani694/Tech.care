@@ -15,34 +15,33 @@ const Navbar = () => {
         </div>
         <div className="center">
             <div className="item">
-            <a href="#">
+         
             <HomeOutlinedIcon/>
             <span>Overview</span>
-            </a>
+            
             </div>
             <div className="item">
-            <a href="#">
+          
             <PeopleAltOutlinedIcon/>
             <span>Patients</span>
-            </a>
+            
             </div>
             <div className="item">
-            <a href="#">
+           
             <CalendarTodayOutlinedIcon/>
             <span>Shadule</span>
-            </a>
+           
             </div>
             <div className="item">
-            <a href="#">
-            <ChatBubbleOutlineOutlinedIcon/>
+              <ChatBubbleOutlineOutlinedIcon/>
             <span>Message</span>
-            </a>
+          
             </div>
             <div className="item">
-            <a href="#">
+           
             <CreditCardOutlinedIcon/>
             <span>Transactions</span>
-            </a>
+            
             </div>
         </div>
         <div className="right">
